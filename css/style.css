@@ -1,0 +1,74 @@
+@font-face {
+  font-family: 'Star wars';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('../fonts/STARWARS.woff2') format('woff2');
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: serif;
+  color: white;
+  background-color: black;
+}
+
+.reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.reset-text {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1400px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.preloader-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.preloader-wraper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Star wars';
+}
+
+.preloader-icon {
+  margin-bottom: 20px;
+  font-size: 86px;
+}
+
+.preloader-text {
+  color: green;
+  animation: load 1s  infinite linear;
+}
+
+@keyframes load {
+  from {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.4);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}

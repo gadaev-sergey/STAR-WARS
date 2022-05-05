@@ -1,0 +1,143 @@
+.film-item {
+  min-height: 100vh;
+  margin: 0 auto;
+  background-image: url(../img/star.jpg);
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.film-item__container {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.film-item__linkBack {
+  margin-bottom: 80px;
+  padding: 12px;
+  width: max-content;
+  display: inline-block;
+
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+
+  background-color: #00000085;
+  border-radius: 8px;
+
+  transition: color .2s ease-in-out, background .2s ease-in-out;
+}
+
+.film-item__linkBack::before {
+  content: '<';
+  margin-right: 12px;
+  display: inline-block;
+  color: inherit;
+}
+
+.film-item__linkBack:hover {
+  color: black;
+  background-color: white;
+}
+
+.film-item__title-wraper {
+  margin-bottom: 20px;
+}
+
+.film-item__title {
+  margin-right: 40px;
+  display: inline-block;
+
+  font-family: 'Star wars';
+  font-size: 68px;
+  letter-spacing: 6px;
+}
+
+.film-item__number-episode {
+  font-size: 68px;
+  font-weight: 700;
+  color: grey;
+}
+
+.film-item__desc {
+  margin-bottom: 80px;
+
+  max-width: 800px;
+  font-size: 24px;
+}
+
+.title-2 {
+  margin-bottom: 20px;
+
+  font-family: 'Star wars';
+  font-size: 42px;
+  letter-spacing: 6px;
+}
+
+.cards-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+  gap: 20px;
+}
+
+.planets-list {
+  margin-bottom: 20px;
+}
+
+.cards-item {
+  padding: 10px;
+
+  text-align: center;
+
+  border-radius: 8px;
+  background-color: #00000054;
+}
+
+.cards-title {
+  margin-bottom: 10px;
+}
+
+.cards-desc {
+  color: gray;
+}
+
+@media(max-width: 1024px) {
+  .film-item__title,
+  .film-item__number-episode {
+    font-size: 42px;
+  }
+
+  .film-item__desc {
+    font-size: 18px;
+  }
+
+  .title-2 {
+    font-size: 36px;
+  }
+}
+
+@media(max-width: 768px) {
+  .film-item__title,
+  .film-item__number-episode {
+    font-size: 36px;
+  }
+
+  .title-2 {
+    font-size: 24px;
+  }
+
+  .cards-list {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  }
+
+  .cards-title {
+    font-size: 18px;
+  }
+
+  .cards-desc {
+    font-size: 14px;
+  }
+}
